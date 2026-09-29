@@ -1,1 +1,28 @@
-<h1>hello</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>C++ to English</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>C++ to English</h1>
+    <p>Paste C++ code below to check syntax errors and convert code logic to plain English.</p>
+
+    <textarea id="cppCode" placeholder="int main() {&#10;  std::cout << &quot;Hello World&quot;;&#10;  return 0;&#10;}"></textarea>
+
+    <button id="translateBtn">Check & Translate</button>
+
+    <div id="errorBox" class="box error hidden"></div>
+    
+    <div id="outputBox" class="box output hidden">
+      <h3>Human Translation</h3>
+      <pre id="explanationText"></pre>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
